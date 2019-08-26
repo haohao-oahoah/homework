@@ -1,0 +1,15 @@
+.infoContainer {
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.cell {
+    max-width: 50px;
+    white-space : nowrap;
+    overflow : hidden;
+}
+
+.expand-small-on-hover:hover {
+  max-width : 300px; 
+  text-overflow: ellipsis;
+}

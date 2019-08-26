@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Table Component</title>
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<style type="text/css" media="screen">
+</style>
+<body>
+<div class="infoContainer jumbotron">
+  <h3>Table Component</h3>
+</div>
+
+<!-- pagination elements : pagination -->
+
+<span>Go to: &nbsp</span>
+<button type="button" onclick="paginator.first()">First</button>
+<button type="button" onclick="paginator.previous()">Previous</button>
+<span id="pagenumber">Page...</span>
+<button type="button" onclick="paginator.next()">Next</button>
+<button type="button" onclick="paginator.last()">Last</button>
+<span>&nbsp</span>
+
+<!-- resize width -->
+
+<span>&nbsp Resize colunm width(%): &nbsp</span>
+<input type="text" id="widthResize" size="2" value="100"><span>%&nbsp</span>
+<button type="button" onclick="tableManager.resize()">Resize</button>
+
+<!-- table component elements -->
+<p></p>
+<div id=table-component>Loading...</div>
+
+
+<!-- SCRIPT START -->
+
+<!-- DEPENDENCIE(s) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js'></script>
+<script src='http://fb.me/react-dom-0.14.0.js'></script>
+
+<!-- MODULE(s) -->
+
+<script src="./src/js/modules/tableWorker.js"></script>
+<script src="./src/js/modules/tableManager.js"></script>
+<script src="./src/js/modules/operators/sortBy.js"></script>
+<script src="./src/js/modules/operators/iterator.js"></script>
+<script src="./src/js/modules/operators/paginator.js"></script>
+
+<!-- ADD-ON(s) -->
+
+<script src="./src/js/modules/addons/dragndrop.js"></script>
+
+<!-- MAIN -->
+
+<script src="./src/js/main.js"></script>
+
+<!-- SCRIPT END -->
+
+</body>
+</html>

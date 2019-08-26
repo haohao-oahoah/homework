@@ -1,2 +1,2 @@
 # homework
-table component
+reusable table component
